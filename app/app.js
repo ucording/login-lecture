@@ -7,6 +7,7 @@ const home = require("./src/routes/home") //home에 있는 js 를 가져옴
 // 앱 세팅
 app.set("views", "./src/views");
 app.set("view engine", "ejs")
+home.use(express.static(`${__dirname}/src/public`))
 
 app.use("/", home); //미들 웨어를 등록해주는 메서드
 
