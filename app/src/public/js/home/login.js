@@ -10,8 +10,9 @@ function login() {
         id : id.value,
         psword : psword.value,
     };
-    console.log(req,JSON.stringify(req));
+    console.log('login click event : ',req,JSON.stringify(req));
 
+    //서버로 메세지 전달 방법
     fetch("/login",{
         method: "POST",
         headers: {
