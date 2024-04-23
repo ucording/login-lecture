@@ -15,15 +15,26 @@ class UserStorage {
         return userInfo;
     };
 
-    static getUsers(...fields) {      //외부에서 #users 에 접근하는 방법
-        // const users = this.#users;
+    static #getUsers(data, isAll, fields) {
+        const users = JSON.parse(data);
+        if (isAll) return users;
+        
         const newUsers = fields.reduce((newUsers, field) => {
-        if (users.hasOwnProperty(field)) {
-            newUsers[field] = users[field];
-        }
-        return newUsers
-        },{});
-        return newUsers;
+            if (users.hasOwnProperty(field)) {
+                newUsers[field] = users[field];
+            }
+            return newUsers
+            },{});
+            return newUsers;
+    }
+
+    static getUsers(isAll, ...fields) {      //외부에서 #users 에 접근하는 방법
+        return fs
+        .readFile("./src/databases/users.json")
+        .then((data) => {
+            return this.#getUsers(data, isAll, fields);
+        })
+        .catch(console.error);
     };
     
     static getUserInfo(id) {
@@ -38,13 +49,11 @@ class UserStorage {
 
 
 
-    static save(userInfo) {
-        // const users = this.#users;
-        users.id.push(userInfo.id);
-        users.name.push(userInfo.name);
-        users.psword.push(userInfo.psword);
+    static async save(userInfo) {
+        const users = await this.getUsers(true)
+        console.log(users);
 
-        return { success : true};
+        fs.writeFile ("./src/databases/users.json", JSON.stringify(users));
     }
 
 }
