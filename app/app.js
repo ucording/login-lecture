@@ -1,9 +1,12 @@
 "use strict"
 
 //모듈
-const express = require('express')
-const app = express()
-const bodyParser = require("body-parser")
+const express = require('express');
+const bodyParser = require("body-parser");
+const dotenv = require("dotenv");  // 모든 개발환경에서 사용가능함
+dotenv.config();
+
+const app = express();
 
 //라우팅
 const home = require("./src/routes/home") //home에 있는 js 를 가져옴
