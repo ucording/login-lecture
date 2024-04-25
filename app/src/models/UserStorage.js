@@ -3,8 +3,7 @@
 const fs = require("fs").promises;
 
 class UserStorage {
-
-    static #getUserInfo(data, id) {
+    static _getUserInfo(data, id) {
         const users = JSON.parse(data);
         const idx = users.id.indexOf(id);
         const usersKeys = Object.keys(users);
@@ -15,7 +14,7 @@ class UserStorage {
         return userInfo;
     }
 
-    static #getUsers(data, isAll, fields) {
+    static _getUsers(data, isAll, fields) {
         const users = JSON.parse(data);
         if (isAll) return users;
 
@@ -28,20 +27,26 @@ class UserStorage {
         return newUsers;
     }
 
-    static readUsersFile() {
-        return fs.readFile("./src/databases/users.json");
-    }
+    // static readUsersFile() {
+    //     return fs.readFile("./src/databases/users.json");
+    // }
 
     static getUsers(isAll, ...fields) {
-        return this.readUsersFile()
-            .then(data => this.#getUsers(data, isAll, fields))
-            .catch(console.error);
+        return fs
+        .readFile("./src/databases/users.json")
+        .then((data) => {
+          return this._getUsers(data, isAll, fields)
+          })
+        .catch(console.error);
     }
 
     static getUserInfo(id) {
-        return this.readUsersFile()
-            .then(data => this.#getUserInfo(data, id))
-            .catch(console.error);
+        return fs
+          .readFile("./src/databases/users.json")
+          .then((data) => {
+            return this._getUserInfo(data, id);
+          })
+          .catch(console.error);
     }
 
     static async save(userInfo) {
