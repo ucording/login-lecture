@@ -6,3 +6,50 @@
 2024-04-26 13:33:05 [백엔드 맛보기] info : GET /register 304 - - 2.673 ms
 
 2024-04-26 13:34:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 13:48:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:00:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:02:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:03:05 [백엔드 맛보기] info : GET /register 200 "회원가입 화면으로 이동"
+2024-04-26 14:03:05 [백엔드 맛보기] info : GET /login 200 "로그인 화면으로 이동"
+2024-04-26 14:03:05 [백엔드 맛보기] error : POST/ /login  Respone: false, TypeError: Cannot destructure property 'id' of '(intermediate value)' as it is undefined."
+2024-04-26 14:03:05 [백엔드 맛보기] info : POST/ /login  Respone: true, undefined"
+2024-04-26 14:03:05 [백엔드 맛보기] info : GET / 200 "홈 화면으로 이동"
+2024-04-26 14:05:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:05:05 [백엔드 맛보기] info : GET /login 200 "로그인 화면으로 이동"
+2024-04-26 14:05:05 [백엔드 맛보기] info : POST/ /login  Respone: true, 
+2024-04-26 14:05:05 [백엔드 맛보기] info : GET / 200 "홈 화면으로 이동"
+2024-04-26 14:05:05 [백엔드 맛보기] info : GET /register 200 "회원가입 화면으로 이동"
+2024-04-26 14:05:05 [백엔드 맛보기] error : POST/ /register  Respone: false, Error: ER_DUP_ENTRY: Duplicate entry 'woorimIT' for key 'users.PRIMARY'
+2024-04-26 14:06:05 [백엔드 맛보기] info : POST/ /register  Respone: true, 
+2024-04-26 14:06:05 [백엔드 맛보기] info : GET /login 200 "로그인 화면으로 이동"
+2024-04-26 14:08:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:08:05 [백엔드 맛보기] info : GET /login 200 "로그인 화면으로 이동"
+2024-04-26 14:09:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:11:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:12:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:12:05 [백엔드 맛보기] info : GET /login 200 "로그인 화면으로 이동"
+2024-04-26 14:12:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:13:05 [백엔드 맛보기] info : POST/ /login 200 Respone: true, 
+2024-04-26 14:14:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:14:05 [백엔드 맛보기] info : GET /login 200 "로그인 화면으로 이동"
+2024-04-26 14:14:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:14:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:17:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 비밀번호가 틀렸습니다.
+2024-04-26 14:22:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:23:05 [백엔드 맛보기] error : POST/ /login 400 Respone: false, TypeError: Cannot destructure property 'id' of '(intermediate value)' as it is undefined.
+2024-04-26 14:24:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:24:05 [백엔드 맛보기] info : GET /login 304 "로그인 화면으로 이동"
+2024-04-26 14:24:05 [백엔드 맛보기] error : POST/ /login 400 Respone: false, TypeError: Cannot destructure property 'id' of '(intermediate value)' as it is undefined.
+2024-04-26 14:27:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:28:05 [백엔드 맛보기] info : GET /login 304 "로그인 화면으로 이동"
+2024-04-26 14:28:05 [백엔드 맛보기] error : POST/ /login 400 Respone: false, TypeError: Cannot destructure property 'user' of '(intermediate value)' as it is undefined.
+2024-04-26 14:28:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
+2024-04-26 14:29:05 [백엔드 맛보기] info : GET /login 304 "로그인 화면으로 이동"
+2024-04-26 14:29:05 [백엔드 맛보기] info : POST/ /login 200 Respone: false, 존재하지 않은 아이디입니다.
+2024-04-26 14:31:05 [백엔드 맛보기] info : 3000 포트에서 서버가 가동되었습니다
