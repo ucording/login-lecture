@@ -19,7 +19,7 @@ class User {
         }
         return { success: false, msg: "존재하지 않은 아이디입니다."};
       } catch (err) {
-        return {success: false, msg: err};
+        return {success: false, err};  // err: err 키와 value 같으면 key 만 입력
       }
     }
 
@@ -29,7 +29,7 @@ class User {
           const response = await UserStorage.save(client)
           return response
         } catch (err) {
-          return { success: false, msg: err};
+          return { success: false, err}; // err: err 키와 value 같으면 key 만 입력
         }
 
     }

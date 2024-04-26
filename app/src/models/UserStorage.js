@@ -8,7 +8,7 @@ class UserStorage {
       return new Promise((resolve, reject) => {  //Promise 구문이 성공하면 resolve 반환 실패 reject 반환
         db.query(query, [id], (err, data) => {
           if(err) reject(`${err}`); //실패시 err
-          resolve(data[0]);       //성공시 resolve 반환
+          else resolve(data[0]);       //성공시 resolve 반환
          });
       });
    
@@ -22,7 +22,7 @@ class UserStorage {
            [userInfo.id, userInfo.name, userInfo.psword],
            (err) => {
           if(err) reject(`${err}`); //실패시 err
-          resolve({ success: true });       //성공시 resolve 반환
+          else resolve({ success: true });       //성공시 resolve 반환
          });
       });
     }
